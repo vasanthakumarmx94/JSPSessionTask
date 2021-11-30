@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+<body>
+
+	<h3>Loan calculate</h3>
+	<form action="emicalculate.jsp" method="post" style="width: 300px">
+	
+		<div class="form-group">
+			<label for="loanamt">Enter Loan Amount</label>
+			 <input type="number" class="form-control" name="loanamt" id="loanamt" placeholder="Loan Amount" />
+		</div>
+
+		<div class="form-group">
+			<label>Enter Period in years:</label> 
+			<select name="pyear" class="form-control" >
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="13">17</option>
+				<option value="14">18</option>
+				<option value="15">19</option>
+				<option value="16">20</option>
+			</select><br>
+		</div>
+
+			<div class="form-group">
+				<label for="roi">Enter rate of interest:</label>
+				 <input type="number" class="form-control" name="rateofintrest" id="roi" placeholder="Rate of Intrest" />
+			</div>
+
+			<button type="submit" class="btn btn-primary">Calculate</button>
+			<button type="reset" class="btn btn-primary">Reset</button>
+			
+	</form>
+
+
+</body>
+</html>
